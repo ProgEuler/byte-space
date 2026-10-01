@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/Header_Logo.png";
+import cartIcon from "@/assets/svg/cart.svg";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -36,9 +37,18 @@ export default function Navbar() {
           </Link>
           <Link
             href="/signup"
-            className="inline-flex h-10 items-center justify-center rounded-xl bg-brand-lime px-4 text-sm font-semibold text-brand-ink transition hover:bg-[#C7E800]"
+            className="text-sm font-medium text-white/85 transition hover:text-white"
           >
             Join Us
+          </Link>
+          <Link href="/cart">
+            <Image
+              src={cartIcon}
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5"
+            />
           </Link>
         </div>
       </nav>

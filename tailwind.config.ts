@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          blue: "#1A2BFF",
-          "blue-dark": "#0E1FCC",
-          lime: "#D4F800",
-          "lime-soft": "#E5FB3D",
+          blue: "#003BE2",
+          "blue-dark": "#0030B8",
+          lime: "#CBFC01",
+          "lime-soft": "#DDFE47",
           ink: "#0A0A0A",
           muted: "#6B7280",
           border: "#E5E7EB",
@@ -34,7 +34,7 @@ const config: Config = {
           "linear-gradient(180deg, #F4FFB0 0%, #ECFFB6 40%, #FFFFFF 100%)",
       },
       backgroundSize: {
-        grid: "44px 44px",
+        grid: "120px 120px",
       },
       keyframes: {
         "fade-up": {

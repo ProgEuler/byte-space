@@ -10,7 +10,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "sarah",
     name: "Sarah M.",
-    role: "Lifelong Learner",
+    role: "Enthusiastic Learner",
     quote:
       "ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning.",
     avatar: "https://i.pravatar.cc/120?img=47",
@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "james",
     name: "James L.",
-    role: "Aspiring Learner",
+    role: "Lifelong Learner",
     quote:
       "I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development.",
     avatar: "https://i.pravatar.cc/120?img=12",

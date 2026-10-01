@@ -15,7 +15,7 @@ const logos = [
 
 export default function LogoStrip() {
   return (
-    <section className="border-b border-brand-border bg-white py-16">
+    <section className="bg-gray-50 py-16">
       <div className="container-page">
         <ul className="flex flex-wrap items-center justify-center gap-x-16 gap-y-6">
           {logos.map((l) => (

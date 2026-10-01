@@ -7,6 +7,7 @@ import LearningPathsSection from "@/components/sections/LearningPaths";
 import LogoStrip from "@/components/sections/LogoStrip";
 import CreatorCTA from "@/components/sections/CreatorCTA";
 import Testimonials from "@/components/sections/Testimonials";
+import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <CreatorCTA />
         <Testimonials />
       </main>
+      <Footer />
     </>
   );
 }

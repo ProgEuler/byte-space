@@ -1,130 +1,162 @@
 import Image from "next/image";
-import { Bell, Star } from "lucide-react";
-import FloatingCard from "@/components/ui/FloatingCard";
+import { Star } from "lucide-react";
 import HeroSearchForm from "@/components/sections/HeroSearchForm";
-import right from "@/assets/MaskGroup.png";
-import left from "@/assets/MaskGroup2.png";
 import person from "@/assets/person.png";
+import limeSpiralLeft from "@/assets/MaskGroup.png";
+import whiteZigzagLeft from "@/assets/MaskGroup1.png";
+import whiteDonutLeft from "@/assets/MaskGroup3.png";
+import limeCylinderRight from "@/assets/MaskGroup2.png";
+import whiteConeRight from "@/assets/Cone.png";
+import whiteHelixRight from "@/assets/Frame.png";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-brand-blue pt-32 pb-24">
-      {/* grid pattern */}
+    <section className="relative overflow-hidden bg-brand-blue pt-24 sm:pt-28 md:pt-32 pb-0">
+
       <div className="pointer-events-none absolute inset-0 bg-grid-blue bg-grid opacity-60" />
 
-      <Image
-        src={right}
-        alt="Right illustration"
-        height={210}
-        width={210}
-        className="absolute left-0 top-1/2 -translate-y-1/2 object-cover"
-      />
-      <Image
-        src={left}
-        alt="Left illustration"
-        height={210}
-        width={210}
-        className="absolute right-0 top-1/2 -translate-y-1/2 object-cover"
-      />
+      <div className="pointer-events-none absolute -left-8 sm:-left-4 md:-left-2 top-10 sm:top-14 md:top-16 w-[150px] sm:w-[190px] md:w-[230px] select-none z-0">
+        <Image
+          src={limeSpiralLeft}
+          alt=""
+          width={240}
+          height={340}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
 
-      <div className="container-page relative">
+      <div className="pointer-events-none absolute left-[12%] sm:left-[14%] md:left-[16%] top-[230px] sm:top-[260px] md:top-[280px] w-[70px] sm:w-[85px] md:w-[120px] select-none z-0">
+        <Image
+          src={whiteZigzagLeft}
+          alt=""
+          width={140}
+          height={140}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="pointer-events-none absolute left-[2%] sm:left-[4%] md:left-[9%] bottom-6 sm:bottom-10 md:bottom-12 w-[180px] sm:w-[220px] md:w-[300px] select-none z-10">
+        <Image
+          src={whiteDonutLeft}
+          alt=""
+          width={280}
+          height={280}
+          priority
+          className="w-full h-auto drop-shadow-md"
+        />
+      </div>
+
+      <div className="pointer-events-none absolute -right-8 sm:-right-4 md:-right-2 top-8 sm:top-12 md:top-14 w-[140px] sm:w-[170px] md:w-[210px] select-none z-0">
+        <Image
+          src={limeCylinderRight}
+          alt=""
+          width={220}
+          height={340}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="pointer-events-none absolute right-[12%] sm:right-[15%] md:right-[17%] top-[220px] sm:top-[245px] md:top-[265px] w-[80px] sm:w-[95px] md:w-[150px] select-none z-0">
+        <Image
+          src={whiteConeRight}
+          alt=""
+          width={160}
+          height={160}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="pointer-events-none absolute right-[3%] sm:right-[5%] md:right-[9%] bottom-6 sm:bottom-10 md:bottom-12 w-[125px] sm:w-[155px] md:w-[230px] select-none z-10">
+        <Image
+          src={whiteHelixRight}
+          alt=""
+          width={220}
+          height={280}
+          priority
+          className="w-full h-auto rotate-3 drop-shadow-md"
+        />
+      </div>
+
+      <div className="container-page relative z-10">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="heading-display animate-fade-up text-4xl leading-tight text-white sm:text-5xl md:text-6xl">
+          <h1 className="heading-display animate-fade-up text-4xl sm:text-5xl md:text-[58px] leading-[1.12] text-white">
             Get Access to Hundreds
             <br />
             Courses Available
           </h1>
-          <p className="mx-auto mt-5 max-w-xl text-sm text-white/80 sm:text-base">
+          <p className="mx-auto mt-4 max-w-xl text-xs sm:text-sm text-white/80 font-normal leading-relaxed">
             Unlock your creativity, gain valuable knowledge, and grow your
             business with our wide range of courses.
           </p>
 
           <HeroSearchForm />
         </div>
+      </div>
 
-        {/* illustration */}
-        <div className="relative mx-auto mt-16 hidden h-[420px] max-w-3xl md:block">
-          {/* lime disc */}
-          <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-lime" />
+      <div className="relative mx-auto mt-4 h-[380px] sm:h-[440px] md:h-[500px] w-full max-w-[1080px]">
 
-          {/* main person photo */}
-          <div className="absolute left-1/2 top-1/2 z-10 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
-            <Image
-              src={person}
-              alt="Happy learner"
-              fill
-              sizes="300px"
-              className="object-cover"
-              priority
-            />
+        <div className="pointer-events-none absolute bottom-[-450px] sm:bottom-[-510px] md:bottom-[-970px] left-1/2 h-[750px] w-[750px] sm:h-[860px] sm:w-[860px] md:h-[1400px] md:w-[1400px] -translate-x-1/2 rounded-full bg-brand-lime" />
+
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 w-[360px] sm:w-[420px] md:w-[580px] max-w-none">
+          <Image
+            src={person}
+            alt="Happy learner holding laptop"
+            width={516}
+            height={483}
+            priority
+            quality={100}
+            className="w-full h-auto block select-none pointer-events-none"
+          />
+        </div>
+
+        <div className="absolute left-[7%] sm:left-[11%] md:left-[15%] lg:left-[19%] top-[14%] sm:top-[16%] md:top-[18%] z-20 rounded-2xl bg-white px-4 py-2.5 sm:px-4 sm:py-4 shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
+          <p className="text-xs sm:text-[13px] text-brand-ink">
+            UI/UX Design
+          </p>
+          <p className="mt-0.5 text-[10px] sm:text-[11px] text-brand-muted font-medium">
+            200 Courses <span className="mx-0.5">·</span> 1000+ Students
+          </p>
+        </div>
+
+        <div className="absolute left-[3%] sm:left-[6%] md:left-[9%] lg:left-[13%] bottom-10 sm:bottom-14 md:bottom-16 z-20 rounded-2xl bg-white p-3 sm:p-4 shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
+          <p className="text-xs sm:text-[13px] font-bold text-brand-ink">
+            Happy Students
+          </p>
+          <div className="mt-1 flex items-center gap-1">
+            <span className="text-xs font-semibold text-brand-ink">4.5</span>
+            <span className="text-[11px] text-brand-muted font-medium">(240)</span>
+            <Star size={11} className="fill-brand-lime text-brand-lime ml-0.5" />
           </div>
-
-          {/* floating card: UX/UI badge */}
-          <FloatingCard className="absolute left-2 top-12 w-44">
-            <p className="text-xs font-semibold text-brand-ink">UX/UI Design</p>
-            <p className="text-[10px] text-brand-muted">240 Courses</p>
-          </FloatingCard>
-
-          {/* floating card: Pricing */}
-          <FloatingCard className="absolute right-6 top-10 w-44">
-            <p className="text-[10px] font-medium uppercase tracking-wider text-brand-muted">
-              Total Revenue
-            </p>
-            <p className="mt-1 text-xl font-extrabold text-brand-ink">
-              $120.29
-            </p>
-          </FloatingCard>
-
-          {/* floating card: Happy students */}
-          <FloatingCard className="absolute bottom-6 left-2 w-56">
-            <p className="text-xs font-semibold text-brand-ink">
-              Happy Students
-            </p>
-            <div className="mt-2 flex -space-x-2">
-              {[
-                "https://i.pravatar.cc/40?img=1",
-                "https://i.pravatar.cc/40?img=5",
-                "https://i.pravatar.cc/40?img=8",
-                "https://i.pravatar.cc/40?img=14",
-              ].map((src) => (
-                <span
-                  key={src}
-                  className="h-7 w-7 overflow-hidden rounded-full border-2 border-white bg-brand-surface"
-                >
-                  <Image
-                    src={src}
-                    alt=""
-                    width={28}
-                    height={28}
-                    className="h-full w-full object-cover"
-                  />
-                </span>
+          <div className="mt-2 flex items-center">
+            <div className="flex -space-x-1.5">
+              {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                <img
+                  key={num}
+                  src={`/avatars/student-${num}.png`}
+                  alt=""
+                  className="h-5 w-5 sm:h-6 sm:w-6 rounded-full object-cover border-[1.5px] border-white"
+                />
               ))}
             </div>
-          </FloatingCard>
-
-          {/* floating card: learning progress */}
-          <FloatingCard className="absolute bottom-10 right-4 w-44">
-            <p className="text-xs font-semibold text-brand-ink">
-              Learning Progress
-            </p>
-            <p className="mt-1 text-xl font-extrabold text-brand-ink">55%</p>
-            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-brand-surface">
-              <div className="h-full w-[55%] rounded-full bg-brand-blue" />
-            </div>
-          </FloatingCard>
-
-          {/* bell badge */}
-          <div className="absolute right-16 top-2 flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-card-lg">
-            <Bell size={18} className="text-brand-ink" />
-          </div>
-
-          {/* star rating small chip */}
-          <div className="absolute left-12 bottom-2 flex items-center gap-1 rounded-full bg-white px-2.5 py-1 shadow-card-lg">
-            <Star size={12} className="fill-brand-lime text-brand-lime" />
-            <span className="text-[11px] font-semibold text-brand-ink">
-              4.5
+            <span className="relative z-10 flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center rounded-full bg-brand-lime text-[9px] font-bold text-brand-ink -ml-1.5 border-[1.5px] border-white">
+              2K+
             </span>
+          </div>
+        </div>
+
+        <div className="absolute right-[7%] sm:right-[11%] md:right-[15%] lg:right-[19%] top-[16%] sm:top-[18%] md:top-[20%] z-20 w-36 sm:w-44 rounded-2xl bg-white p-3.5 sm:p-4 shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
+          <p className="text-[11px] sm:text-xs font-medium text-brand-ink/80">
+            Learning Progress
+          </p>
+          <p className="mt-0.5 sm:mt-1 text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight leading-none">
+            55%
+          </p>
+          <div className="mt-2.5 sm:mt-3 h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
+            <div className="h-full w-[55%] rounded-full bg-brand-lime" />
           </div>
         </div>
       </div>

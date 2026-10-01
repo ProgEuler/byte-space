@@ -19,23 +19,23 @@ export default function HeroSearchForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="mx-auto mt-8 flex max-w-xl items-center gap-2 rounded-full bg-white p-2 shadow-card-lg"
+      className="mx-auto mt-7 flex w-full max-w-[480px] items-center gap-3 px-4"
     >
-      <div className="flex flex-1 items-center gap-3 px-4">
-        <Search size={18} className="text-brand-muted" />
+      <div className="flex flex-1 items-center gap-2.5 rounded-full bg-white px-4 py-2.5 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+        <Search size={17} className="text-gray-400 stroke-[2.2]" />
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Courses, topics, creators"
-          className="w-full bg-transparent text-sm outline-none placeholder:text-brand-muted"
+          placeholder="Course, topic, creator"
+          className="w-full bg-transparent text-sm text-gray-800 outline-none placeholder:text-gray-400"
         />
       </div>
       <button
         type="submit"
-        className="h-11 rounded-full bg-brand-lime px-6 text-sm font-semibold text-brand-ink transition hover:bg-[#C7E800]"
+        className="h-10 rounded-full bg-brand-lime px-6 text-sm font-semibold text-brand-ink transition hover:brightness-105 active:scale-95"
       >
-        Discover
+        Search
       </button>
     </form>
   );
